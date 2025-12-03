@@ -3,122 +3,143 @@ import Image from "next/image"
 
 export function RequirementsSection() {
   return (
-    <section id="requisitos" className="py-16 bg-background relative overflow-hidden">
-      {/* Blue wave decoration */}
-      <div className="absolute top-0 right-0 w-1/2 h-full">
-        <svg viewBox="0 0 500 600" fill="none" xmlns="http://www.w3.org/2000/svg" className="h-full w-auto">
-          <path d="M150 0C50 100 0 200 50 300C100 400 150 500 100 600H500V0H150Z" fill="#0077B6" fillOpacity="0.1" />
-        </svg>
-      </div>
+    <section id="requisitos" className="py-16 bg-background">
+      <div className="container mx-auto px-4">
+        {/* TÍTULO */}
+        <h2 className="text-[40px] md:text-[60px] lg:text-[82px] font-bold text-center text-[#00AEEF] mb-4">
+          Requisitos
+        </h2>
 
-      <div className="container mx-auto px-4 relative z-10">
-        <h2 className="text-3xl md:text-4xl font-bold text-center text-[#0077B6] italic mb-4">Requisitos</h2>
-        <p className="text-center text-muted-foreground mb-12 max-w-2xl mx-auto">
+        {/* TEXTO DESCRIPTIVO */}
+        <p className="text-center text-[#363735] text-[14px] md:text-[16px] max-w-3xl mx-auto mb-12">
           Consulta los documentos y requisitos necesarios para solicitar tu préstamo.
           <br />
           Los requisitos varían según si eres persona individual o jurídica.
         </p>
 
-        {/* Persona Individual */}
-        <div className="grid md:grid-cols-3 gap-8 mb-12 items-center max-w-5xl mx-auto">
+        {/* PERSONA INDIVIDUAL */}
+        <div className="grid md:grid-cols-3 gap-8 items-start max-w-6xl mx-auto mb-10">
+          {/* Columna izquierda: imagen + texto + botón */}
           <div className="text-center">
-            <div className="relative w-32 h-32 mx-auto mb-4">
-              <Image src="/businessman-in-suit-illustration.jpg" alt="Persona Individual" fill className="object-contain" />
+            <div className="relative w-40 h-40 mx-auto mb-4">
+              <Image
+                src="/imagenes/52.png" 
+                alt="Persona Individual"
+                fill
+                className="object-contain"
+              />
             </div>
-            <h3 className="font-bold text-[#0077B6] mb-3">Persona Individual</h3>
-            <Button className="bg-[#0077B6] hover:bg-[#005A8D] text-white rounded-full text-sm">
+            <h3 className="text-[20px] md:text-[22px] lg:text-[24px] font-bold text-[#363735] mb-3">
+              Persona Individual
+            </h3>
+            <Button className="bg-[#99C137] hover:bg-[#8AB12F] text-white rounded-full px-8 py-2 text-sm font-semibold">
               Solicitar préstamo
             </Button>
           </div>
+
+          {/* Columna derecha: listas */}
           <div className="md:col-span-2">
-            <div className="grid md:grid-cols-2 gap-4">
-              <ul className="space-y-2 text-sm text-foreground">
-                <li className="flex items-start gap-2">
-                  <span className="text-[#0077B6]">•</span>
-                  Documento de identidad vigente (DPI)
+            <div className="grid md:grid-cols-2 gap-4 text-[14px] md:text-[16px] text-[#363735]">
+              <ul className="space-y-2">
+                <li className="flex gap-2">
+                  <span className="text-[#00AEEF]">•</span>
+                  <span>Documento de identidad vigente (DPI)</span>
                 </li>
-                <li className="flex items-start gap-2">
-                  <span className="text-[#0077B6]">•</span>
-                  Licencia de conducir vigente
+                <li className="flex gap-2">
+                  <span className="text-[#00AEEF]">•</span>
+                  <span>Licencia de conducir vigente</span>
                 </li>
-                <li className="flex items-start gap-2">
-                  <span className="text-[#0077B6]">•</span>
-                  Tarjeta de Circulación
+                <li className="flex gap-2">
+                  <span className="text-[#00AEEF]">•</span>
+                  <span>Tarjeta de Circulación</span>
                 </li>
               </ul>
-              <ul className="space-y-2 text-sm text-foreground">
-                <li className="flex items-start gap-2">
-                  <span className="text-[#0077B6]">•</span>
-                  Título de propiedad del vehículo
+              <ul className="space-y-2">
+                <li className="flex gap-2">
+                  <span className="text-[#00AEEF]">•</span>
+                  <span>Título de propiedad del vehículo</span>
                 </li>
-                <li className="flex items-start gap-2">
-                  <span className="text-[#0077B6]">•</span>
-                  Recibo de agua, luz o teléfono
+                <li className="flex gap-2">
+                  <span className="text-[#00AEEF]">•</span>
+                  <span>Recibo de agua, luz o teléfono</span>
                 </li>
               </ul>
             </div>
           </div>
         </div>
 
-        {/* Persona Jurídica */}
-        <div className="grid md:grid-cols-3 gap-8 items-center max-w-5xl mx-auto bg-muted/30 rounded-2xl p-8">
+        {/* LÍNEA DIVISORIA AZUL */}
+        <div className="max-w-6xl mx-auto border-t border-[#00AEEF] my-8" />
+
+        {/* PERSONA JURÍDICA */}
+        <div className="grid md:grid-cols-3 gap-8 items-start max-w-6xl mx-auto">
+          {/* Columna izquierda: imagen + texto + botón */}
           <div className="text-center">
-            <div className="relative w-32 h-32 mx-auto mb-4">
-              <Image src="/businesswoman-professional-illustration.jpg" alt="Persona Jurídica" fill className="object-contain" />
+            <div className="relative w-40 h-40 mx-auto mb-4">
+              <Image
+                src="/imagenes/pngegg.png" 
+                alt="Persona Jurídica"
+                fill
+                className="object-contain"
+              />
             </div>
-            <h3 className="font-bold text-[#0077B6] mb-3">Persona Jurídica</h3>
-            <Button className="bg-[#F97316] hover:bg-[#EA580C] text-white rounded-full text-sm">
+            <h3 className="text-[20px] md:text-[22px] lg:text-[24px] font-bold text-[#363735] mb-3">
+              Persona Jurídica
+            </h3>
+            <Button className="bg-[#99C137] hover:bg-[#8AB12F] text-white rounded-full px-8 py-2 text-sm font-semibold">
               Solicitar préstamo
             </Button>
           </div>
+
+          {/* Columna derecha: listas */}
           <div className="md:col-span-2">
-            <div className="grid md:grid-cols-2 gap-4">
-              <ul className="space-y-2 text-sm text-foreground">
-                <li className="flex items-start gap-2">
-                  <span className="text-[#0077B6]">•</span>
-                  Documento de identidad vigente del representante legal (DPI)
+            <div className="grid md:grid-cols-2 gap-4 text-[14px] md:text-[16px] text-[#363735]">
+              <ul className="space-y-2">
+                <li className="flex gap-2">
+                  <span className="text-[#00AEEF]">•</span>
+                  <span>Documento de identidad vigente del representante legal (DPI)</span>
                 </li>
-                <li className="flex items-start gap-2">
-                  <span className="text-[#0077B6]">•</span>
-                  Licencia de conducir del representante legal
+                <li className="flex gap-2">
+                  <span className="text-[#00AEEF]">•</span>
+                  <span>Licencia de conducir del representante legal</span>
                 </li>
-                <li className="flex items-start gap-2">
-                  <span className="text-[#0077B6]">•</span>
-                  Tarjeta de Circulación
+                <li className="flex gap-2">
+                  <span className="text-[#00AEEF]">•</span>
+                  <span>Tarjeta de Circulación</span>
                 </li>
-                <li className="flex items-start gap-2">
-                  <span className="text-[#0077B6]">•</span>
-                  Título de propiedad del vehículo
+                <li className="flex gap-2">
+                  <span className="text-[#00AEEF]">•</span>
+                  <span>Título de propiedad del vehículo</span>
                 </li>
-                <li className="flex items-start gap-2">
-                  <span className="text-[#0077B6]">•</span>
-                  Patente de comercio
+                <li className="flex gap-2">
+                  <span className="text-[#00AEEF]">•</span>
+                  <span>Patente de comercio</span>
                 </li>
-                <li className="flex items-start gap-2">
-                  <span className="text-[#0077B6]">•</span>
-                  Patente de Sociedad
+                <li className="flex gap-2">
+                  <span className="text-[#00AEEF]">•</span>
+                  <span>Patente de sociedad</span>
                 </li>
               </ul>
-              <ul className="space-y-2 text-sm text-foreground">
-                <li className="flex items-start gap-2">
-                  <span className="text-[#0077B6]">•</span>
-                  Acta y Registro de nombramiento vigente del Representante Legal
+              <ul className="space-y-2">
+                <li className="flex gap-2">
+                  <span className="text-[#00AEEF]">•</span>
+                  <span>Acta y registro de nombramiento vigente del representante legal</span>
                 </li>
-                <li className="flex items-start gap-2">
-                  <span className="text-[#0077B6]">•</span>
-                  Escritura Pública
+                <li className="flex gap-2">
+                  <span className="text-[#00AEEF]">•</span>
+                  <span>Escritura Pública</span>
                 </li>
-                <li className="flex items-start gap-2">
-                  <span className="text-[#0077B6]">•</span>
-                  Punto de Acta
+                <li className="flex gap-2">
+                  <span className="text-[#00AEEF]">•</span>
+                  <span>Punto de acta</span>
                 </li>
-                <li className="flex items-start gap-2">
-                  <span className="text-[#0077B6]">•</span>
-                  RTU actualizado de la empresa y del Representante Legal
+                <li className="flex gap-2">
+                  <span className="text-[#00AEEF]">•</span>
+                  <span>RTU actualizado de la empresa y del representante legal</span>
                 </li>
-                <li className="flex items-start gap-2">
-                  <span className="text-[#0077B6]">•</span>
-                  Recibo de agua, luz o teléfono de la empresa
+                <li className="flex gap-2">
+                  <span className="text-[#00AEEF]">•</span>
+                  <span>Recibo de agua, luz o teléfono de la empresa</span>
                 </li>
               </ul>
             </div>

@@ -9,18 +9,18 @@ import { Phone, MessageCircle, Mail, MapPin } from "lucide-react"
 
 export function ContactSection() {
   return (
-    <section className="py-16 bg-[#F97316]">
+    <section className="py-16 bg-[#FF6C00]">
       <div className="container mx-auto px-4">
-        <div className="grid md:grid-cols-2 gap-12 max-w-5xl mx-auto">
+        <div className="grid md:grid-cols-2 gap-12 max-w-6xl mx-auto">
           {/* Left side - Info */}
           <div className="text-white">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">
+            <h2 className="text-3xl md:text-[45px] lg:text-[70px] font-bold mb-4">
               ¿Necesitas
               <br />
               dinero rápido?
             </h2>
-            <p className="mb-2 font-semibold">Ponte en contacto hoy.</p>
-            <p className="mb-8 opacity-90">Nuestro equipo responde en menos de una hora.</p>
+            <p className="mb-2 font-semibold text-[18px] lg:text-[20px]">Ponte en contacto hoy.</p>
+            <p className="mb-8 opacity-90 text-[18px] lg:text-[20px]">Nuestro equipo responde en menos de una hora.</p>
 
             <div className="space-y-4">
               <div className="flex items-center gap-4 bg-white/10 rounded-xl p-4">
@@ -69,25 +69,25 @@ export function ContactSection() {
           <div className="bg-background rounded-2xl p-8 shadow-xl">
             <form className="space-y-4">
               <div>
-                <Label htmlFor="nombre" className="text-foreground">
+                <Label htmlFor="nombre" className="text-foreground mb-2 md:text-[18px] lg:text-[20px]">
                   Nombre completo *
                 </Label>
                 <Input id="nombre" placeholder="Tu nombre" className="mt-1" />
               </div>
               <div>
-                <Label htmlFor="telefono" className="text-foreground">
+                <Label htmlFor="telefono" className="text-foreground mb-2 md:text-[18px] lg:text-[20px]">
                   Teléfono *
                 </Label>
                 <Input id="telefono" placeholder="+ 502 5XXX-XXXX" className="mt-1" />
               </div>
               <div>
-                <Label htmlFor="email" className="text-foreground">
+                <Label htmlFor="email" className="text-foreground mb-2 md:text-[18px] lg:text-[20px]">
                   Email
                 </Label>
-                <Input id="email" type="email" placeholder="tuemail.com" className="mt-1" />
+                <Input id="email" type="email" placeholder="tu@email.com" className="mt-1" />
               </div>
               <div>
-                <Label htmlFor="vehiculo" className="text-foreground">
+                <Label htmlFor="vehiculo" className="text-foreground mb-3 md:text-[18px] lg:text-[20px]">
                   Tipo de vehículo
                 </Label>
                 <Select>
@@ -104,14 +104,14 @@ export function ContactSection() {
                 </Select>
               </div>
               <div>
-                <Label htmlFor="mensaje" className="text-foreground">
+                <Label htmlFor="mensaje" className="text-foreground mb-3 md:text-[18px] lg:text-[20px]">
                   Mensaje
                 </Label>
                 <Textarea id="mensaje" placeholder="Cuéntanos más sobre tu situación..." className="mt-1" rows={3} />
               </div>
               <Button
                 type="submit"
-                className="w-full bg-[#F97316] hover:bg-[#EA580C] text-white rounded-full py-6 text-lg font-semibold"
+                className="w-full bg-[#1A9CD9] hover:bg-[#EA580C] text-white rounded py-6 text-[20px] font-semibold mt-3"
               >
                 Enviar Solicitud
               </Button>
