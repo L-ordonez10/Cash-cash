@@ -45,7 +45,7 @@ export function BenefitsSection() {
               </div>
 
               {/* Texto dentro del cuadro */}
-              <p className="text-[16px] md:text-[20px] lg:text-[26px] font-medium text-[#143B4D]">
+              <p className="text-[16px] md:text-[20px] lg:text-[26px] font-bold text-[#143B4D]">
                 {benefit.title}
               </p>
             </div>

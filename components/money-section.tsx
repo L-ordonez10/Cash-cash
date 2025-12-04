@@ -2,7 +2,7 @@ import Image from "next/image"
 
 export function MoneySection() {
   return (
-    <section className="py-20 bg-gradient-to-b from-white to-[#FFF5EC]">
+    <section className="py-20 bg-white from-white to-[#FFF5EC]">
       <div className="container mx-auto px-4">
         <h2 className="text-center font-extrabold text-[#FF6C00]
           text-[34px] md:text-[65px] lg:text-[100px] leading-tight mb-10">

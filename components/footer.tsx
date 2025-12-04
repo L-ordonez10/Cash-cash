@@ -1,5 +1,4 @@
 import Link from "next/link"
-import { Facebook, Twitter, Instagram } from "lucide-react"
 import Image from "next/image"
 
 export function Footer() {
@@ -78,23 +77,43 @@ export function Footer() {
               Síguenos
             </h4>
             <div className="flex gap-4">
+              {/* Facebook */}
               <Link
                 href="#"
-                className="w-10 h-10 bg-[#0077B6] rounded-full flex items-center justify-center text-white hover:bg-[#005A8D] transition-colors"
+                className="w-12 h-12  rounded-full flex items-center justify-center hover:bg-[#005A8D] transition-colors"
               >
-                <Facebook className="w-5 h-5" />
+                <Image
+                  src="/iconos/Vector(1).svg"
+                  alt="Facebook"
+                  width={30}
+                  height={25}
+                />
               </Link>
+
+              {/* Twitter */}
               <Link
                 href="#"
-                className="w-10 h-10 bg-[#0077B6] rounded-full flex items-center justify-center text-white hover:bg-[#005A8D] transition-colors"
+                className="w-12 h-12  rounded-full flex items-center justify-center hover:bg-[#005A8D] transition-colors"
               >
-                <Twitter className="w-5 h-5" />
+                <Image
+                  src="/iconos/Vector(2).svg"
+                  alt="Twitter"
+                  width={30}
+                  height={25}
+                />
               </Link>
+
+              {/* Instagram */}
               <Link
                 href="#"
-                className="w-10 h-10 bg-[#0077B6] rounded-full flex items-center justify-center text-white hover:bg-[#005A8D] transition-colors"
+                className="w-12 h-12  rounded-full flex items-center justify-center hover:bg-[#005A8D] transition-colors"
               >
-                <Instagram className="w-5 h-5" />
+                <Image
+                  src="/iconos/Vector(3).svg"
+                  alt="Instagram"
+                  width={30}
+                  height={25}
+                />
               </Link>
             </div>
           </div>

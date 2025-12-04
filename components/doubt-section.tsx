@@ -1,34 +1,49 @@
+import Image from "next/image"
 import { Button } from "@/components/ui/button"
-import { MessageCircle, Phone } from "lucide-react"
 
 export function DoubtSection() {
   return (
-    <section className="py-16 bg-muted/50">
+    <section className="py-16 bg-[#EDEDED]">
       <div className="container mx-auto px-4">
-        <div className="flex flex-col md:flex-row items-center justify-between gap-8 max-w-4xl mx-auto">
-          <div>
-            <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
-              ¿Tienes dudas sobre
-              <br />
-              los requisitos?
+        <div className="flex flex-col md:flex-row items-center justify-between gap-10 max-w-6xl mx-auto">
+
+          {/* TEXTOS */}
+          <div className="text-center md:text-left">
+            <h2 className="text-[30px] md:text-[35px] lg:text-[71px] font-bold text-[#143B4D] leading-tight mb-3">
+              ¿Tienes dudas sobre<br />los requisitos?
             </h2>
-            <p className="text-muted-foreground">
+            <p className="text-[#363735] text-[16px] md:text-[26px] lg:text-[30px]">
               Nuestro equipo está disponible para ayudarte a<br />
               verificar tu documentación.
             </p>
           </div>
-          <div className="flex flex-col gap-4">
-            <Button className="bg-[#25D366] hover:bg-[#20BD5A] text-white rounded-full px-6 py-6 text-lg flex items-center gap-3">
-              <MessageCircle className="w-6 h-6" />
-              Contactar por WhatsApp
-            </Button>
-            <Button
-              variant="outline"
-              className="border-[#F97316] text-[#F97316] hover:bg-[#F97316] hover:text-white rounded-full px-6 py-6 text-lg flex items-center gap-3 bg-transparent"
-            >
-              <Phone className="w-6 h-6" />
-              Llamar ahora
-            </Button>
+
+          {/* BOTONES */}
+          <div className="flex flex-col items-center md:items-start gap-4">
+
+            {/* BOTÓN WHATSAPP */}
+              <Button className="w-full md:w-[320px] bg-[#25D366] hover:bg-[#1ebe5c] text-white rounded px-8 py-5 text-[18px] font-semibold flex items-center justify-start gap-3 shadow-md">
+                <Image
+                  src="/iconos/Vector.svg"
+                  alt="WhatsApp"
+                  width={26}
+                  height={26}
+                />
+                Contactar por WhatsApp
+              </Button>
+
+              {/* BOTÓN LLAMADA */}
+              <Button className="w-full md:w-[320px] bg-[#F97316] hover:bg-[#e26512] text-white rounded px-8 py-5 text-[18px] font-semibold flex items-center justify-start gap-3 shadow-md">
+                <Image
+                  src="/iconos/tel.svg"
+                  alt="Llamar"
+                  width={26}
+                  height={26}
+                />
+                Llamar ahora
+              </Button>
+
+
           </div>
         </div>
       </div>

@@ -23,35 +23,53 @@ export function StepsSection() {
   ]
 
   return (
-    <section id="como-funciona" className="py-16 bg-muted/30">
+    <section id="como-funciona" className="py-16 mb-12 mt-12 bg-white">
       <div className="container mx-auto px-4">
-        <div className="flex flex-wrap justify-center gap-6">
+
+        <div className="flex flex-wrap justify-center gap-8">
           {steps.map((step, index) => (
             <div
               key={index}
-              className="bg-[#EDEDED] rounded-2xl shadow-lg p-6 w-full max-w-sm flex items-center gap-5 hover:shadow-xl transition-shadow"
+              className="
+                bg-[#EDEDED] 
+                rounded-2xl 
+                shadow-lg 
+                p-8 
+                flex-1 
+                min-w-[350px] 
+                max-w-[550px] 
+                flex 
+                items-center 
+                gap-6 
+                hover:shadow-xl 
+                transition-shadow
+              "
             >
-              {/* ICONO PERSONALIZADO */}
-              <div className="w-42 h-16 bg-[#0077B6] rounded-full flex items-center justify-center">
+              {/* ICONO */}
+              <div className="w-35 h-25 flex items-center justify-center">
                 <Image
                   src={step.icon}
                   alt={step.title}
-                  width={40}
-                  height={40}
-                  className="w-8 h-8 invert brightness-0"
+                  width={60}
+                  height={60}
+                  className="object-contain"
                 />
               </div>
 
               {/* TEXTO */}
               <div className="text-left">
-                <h3 className="text-[18px] md:text-[25px] lg:text-[30px] font-bold text-[#363735] mb-1">
+                <h3 className="text-[20px] md:text-[26px] lg:text-[30px] font-bold text-[#363735] mb-2">
                   {step.title}
                 </h3>
-                <p className="text-[15px] text-muted-foreground">{step.description}</p>
+                <p className="text-[15px] text-[#4A4A4A] leading-snug">
+                  {step.description}
+                </p>
               </div>
+
             </div>
           ))}
         </div>
+
       </div>
     </section>
   )
