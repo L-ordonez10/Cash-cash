@@ -9,7 +9,7 @@ import Image from "next/image"
 
 export function ContactSection() {
   return (
-    <section className="py-16 bg-[#FF6C00]">
+    <section className="pt-20 pb-20 bg-[#FF6C00] " id="contacto">
       <div className="container mx-auto px-4">
         <div className="grid md:grid-cols-2 gap-12 max-w-6xl mx-auto">
           
@@ -21,7 +21,7 @@ export function ContactSection() {
               dinero rápido?
             </h2>
 
-            <p className="mb-2 font-semibold text-[18px] lg:text-[20px]">Ponte en contacto hoy.</p>
+            <p className="mb-1 font-semibold text-[18px] lg:text-[20px]">Ponte en contacto hoy.</p>
             <p className="mb-8 opacity-90 text-[18px] lg:text-[20px]">Nuestro equipo responde en menos de una hora.</p>
 
             {/* CONTACT BOXES */}
@@ -40,31 +40,29 @@ export function ContactSection() {
 
               {/* Caja 2 */}
               <div className="flex items-center gap-4 bg-[#EFEFEF] rounded-xl p-4">
-                <div className="w-10 h-10  rounded-full flex items-center justify-center">
+                <div className="w-10 h-10 rounded-full flex items-center justify-center">
                   <Image src="/iconos/whatsapp.svg" alt="WhatsApp" width={24} height={24} />
                 </div>
                 <div>
                   <p className="font-semibold text-[#363735] text-[20px]">WhatsApp</p>
                   <p className="text-[#363735] text-[18px]">+502 2227-4549</p>
-                  <p className="text-[#363735]/80 text-[14px]">Haz clic y escribe hoy mismo</p>
                 </div>
               </div>
 
               {/* Caja 3 */}
               <div className="flex items-center gap-4 bg-[#EFEFEF] rounded-xl p-4">
-                <div className="w-10 h-10  rounded-full flex items-center justify-center">
+                <div className="w-10 h-10 rounded-full flex items-center justify-center">
                   <Image src="/iconos/icon.svg" alt="Email" width={24} height={24} />
                 </div>
                 <div>
                   <p className="font-semibold text-[#363735] text-[20px]">Email</p>
                   <p className="text-[#363735] text-[18px]">ventas@cashcash.com.gt</p>
-                  <p className="text-[#363735]/80 text-[14px]">Respuesta en 24 hrs</p>
                 </div>
               </div>
 
               {/* Caja 4 */}
               <div className="flex items-center gap-4 bg-[#EFEFEF] rounded-xl p-4">
-                <div className="w-10 h-10  rounded-full flex items-center justify-center">
+                <div className="w-10 h-10 rounded-full flex items-center justify-center">
                   <Image src="/iconos/iconubi.svg" alt="Ubicación" width={24} height={24} />
                 </div>
                 <div>
@@ -79,7 +77,7 @@ export function ContactSection() {
 
           {/* RIGHT SIDE - FORM */}
           <div className="bg-background rounded-2xl p-8 shadow-xl">
-            <form className="space-y-4">
+            <form className="space-y-8">
               
               <div>
                 <Label htmlFor="nombre" className="text-foreground mb-2 md:text-[18px] lg:text-[20px]">
@@ -124,7 +122,7 @@ export function ContactSection() {
                 <Label htmlFor="mensaje" className="text-foreground mb-3 md:text-[18px] lg:text-[20px]">
                   Mensaje
                 </Label>
-                <Textarea id="mensaje" placeholder="Cuéntanos más sobre tu situación..." className="mt-1" rows={3} />
+                <Textarea id="mensaje" placeholder="Cuéntanos más sobre tu situación..." className="mt-1 h-30" />
               </div>
 
               <Button

@@ -19,13 +19,13 @@ export function HeroSection() {
       </div>
 
       {/* OVERLAY OSCURO PARA QUE EL TEXTO RESALTE */}
-      <div className="absolute inset-0 bg-black/40 z-10" />
+      <div className="absolute inset-0  z-10" />
 
       {/* CONTENIDO */}
       <div className="relative z-20">
         <div className="container mx-auto px-4 min-h-[550px] md:min-h-[780px] flex items-center">
           <div className="max-w-2xl text-white">
-            <h1 className="text-[35px] md:text-[45px] lg:text-[72px] font-bold italic leading-tight mb-6">
+            <h1 className="text-[35px] md:text-[45px] lg:text-[72px] font-bold  leading-tight mb-6">
               Te damos
               <br />
               dinero rápido
@@ -34,14 +34,15 @@ export function HeroSection() {
             </h1>
 
             <p className="text-[18px] md:text-[22px] lg:text-[30px] mb-2 opacity-90">
-              Obtén préstamos inmediatos sin papeleo complicado.
+              Obtén préstamos inmediatos <br>
+              </br>sin papeleo complicado.
             </p>
 
             <p className="text-[18px] md:text-[22px] lg:text-[24px] font-semibold mb-8">
               Aprobación garantizada en 3 horas.
             </p>
 
-            <Button className="bg-[#F97316] hover:bg-[#EA580C] text-white text-[20px] lg:text-[24px] px-16 py-5 font-semibold shadow-lg">
+            <Button className="bg-[#FF6C00] hover:bg-[#EA580C] mt-2 mb-2 text-white text-[20px] lg:text-[24px] px-30 py-7 font-semibold shadow-lg">
               ¡Solicita ahora!
             </Button>
           </div>

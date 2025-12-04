@@ -13,7 +13,7 @@ export function Header() {
 
   return (
     <header className="sticky top-0 z-50 bg-background border-b border-border">
-      <div className="container mx-auto px-4 py-3 flex items-center justify-between">
+      <div className="container mx-auto px-4 py-8 flex items-center justify-between">
         {/* LOGO */}
         <Link href="/" className="flex items-center gap-2" onClick={closeMenu}>
           <Image src="/iconos/LOGOColor.svg" alt="Logo" width={220} height={60} />
@@ -41,7 +41,7 @@ export function Header() {
           </Link>
           <Button
             variant="outline"
-            className="text-[18px] lg:text-[20px] rounded-full bg-[#99C137] border-[#99C137] text-[#363735] hover:bg-[#92b835]"
+            className="text-[18px] lg:text-[20px] rounded-[13px] bg-[#99C137] border-[#99C137] text-[#363735] hover:bg-[#92b835] py-5 px-6"
           >
             Contáctanos
           </Button>

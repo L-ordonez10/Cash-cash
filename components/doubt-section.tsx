@@ -9,7 +9,7 @@ export function DoubtSection() {
 
           {/* TEXTOS */}
           <div className="text-center md:text-left">
-            <h2 className="text-[30px] md:text-[35px] lg:text-[71px] font-bold text-[#143B4D] leading-tight mb-3">
+            <h2 className="text-[30px] md:text-[35px] lg:text-[65px] font-extrabold text-[#143B4D] leading-none mb-3">
               ¿Tienes dudas sobre<br />los requisitos?
             </h2>
             <p className="text-[#363735] text-[16px] md:text-[26px] lg:text-[30px]">
@@ -22,26 +22,27 @@ export function DoubtSection() {
           <div className="flex flex-col items-center md:items-start gap-4">
 
             {/* BOTÓN WHATSAPP */}
-              <Button className="w-full md:w-[320px] bg-[#25D366] hover:bg-[#1ebe5c] text-white rounded px-8 py-5 text-[18px] font-semibold flex items-center justify-start gap-3 shadow-md">
-                <Image
-                  src="/iconos/Vector.svg"
-                  alt="WhatsApp"
-                  width={26}
-                  height={26}
-                />
-                Contactar por WhatsApp
-              </Button>
+            <Button className="w-full md:w-[320px] bg-[#27D045] hover:bg-[#22b73a] text-white rounded px-8 py-6 text-[18px] font-semibold flex items-center justify-start gap-3 shadow-md">
+              <Image
+                src="/iconos/Vector.svg"
+                alt="WhatsApp"
+                width={26}
+                height={26}
+              />
+              Contactar por WhatsApp
+            </Button>
 
-              {/* BOTÓN LLAMADA */}
-              <Button className="w-full md:w-[320px] bg-[#F97316] hover:bg-[#e26512] text-white rounded px-8 py-5 text-[18px] font-semibold flex items-center justify-start gap-3 shadow-md">
-                <Image
-                  src="/iconos/tel.svg"
-                  alt="Llamar"
-                  width={26}
-                  height={26}
-                />
-                Llamar ahora
-              </Button>
+            {/* BOTÓN LLAMADA */}
+            <Button className="w-full md:w-[320px] bg-[#F97316] hover:bg-[#e26512] text-white rounded px-8 py-6 text-[18px] font-semibold flex items-center justify-start gap-3 shadow-md">
+              <Image
+                src="/iconos/tel.svg"
+                alt="Llamar"
+                width={26}
+                height={26}
+              />
+              Llamar ahora
+            </Button>
+
 
 
           </div>

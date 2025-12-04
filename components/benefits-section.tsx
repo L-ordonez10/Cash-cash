@@ -32,7 +32,7 @@ export function BenefitsSection() {
           {benefits.map((benefit, index) => (
             <div
               key={index}
-              className="bg-muted/50 rounded-2xl p-6 flex flex-col items-center justify-between text-center shadow-sm"
+              className="bg-[#EDEDED] rounded-2xl p-6 flex flex-col items-center justify-between text-center shadow-sm"
             >
               {/* Imagen */}
               <div className="relative w-40 h-32 mb-4 flex items-center justify-center">
@@ -45,7 +45,7 @@ export function BenefitsSection() {
               </div>
 
               {/* Texto dentro del cuadro */}
-              <p className="text-[16px] md:text-[20px] lg:text-[26px] font-bold text-[#143B4D]">
+              <p className="text-[16px] md:text-[20px] lg:text-[28px] font-bold text-[#143B4D] leading-none">
                 {benefit.title}
               </p>
             </div>
